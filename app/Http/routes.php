@@ -19,3 +19,13 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::group(['prefix' => 'filldata'], function(){
+    Route::get('champions', 'FillDataController@champions');
+});
+
+Route::group(['prefix' => 'champion'], function(){
+    Route::get('id/{id}', 'ChampionController@showById');
+    Route::get('name/{name}', 'ChampionController@showByName');
+    Route::get('rid/{rid}', 'ChampionController@showByRiotId');
+});
