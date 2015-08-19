@@ -1,3 +1,24 @@
-body {
-    background-color: #000;
+body{
+    background-color: #222222;
+    color: #cfcfcf;
+}
+h1 {
+    font-family: 'Droid Serif', Georgia, Times, serif;
+    font-size: 49px;
+    line-height: 65px;
+}
+ 
+p {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+.choice {
+    margin-top: 20px;
+}
+.col-md-6 {
+    opacity: 0.5;
+}
+.col-md-6:hover {
+    opacity: 1;
 }
