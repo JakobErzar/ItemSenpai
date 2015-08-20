@@ -27,8 +27,10 @@ class ChampionController extends Controller {
 
     public function nameDemo($name) {
          $champion = Champion::where('name', '=', $name)->with('spells')->first();
-         $test = 'lol';
-         //return view('champion.demo', ['test' => 'lol']);
          return View::make('champion.demo')->with('champion', $champion);
+    }
+    public function demo() {
+         $champions = Champion::with('spells')->get();
+         return View::make('champion.alldemo')->with('champions', $champions);
     }
 }

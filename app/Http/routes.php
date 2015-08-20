@@ -29,4 +29,5 @@ Route::group(['prefix' => 'champion'], function(){
     Route::get('name/{name}', 'ChampionController@showByName');
     Route::get('rid/{rid}', 'ChampionController@showByRiotId');
     Route::get('name/{name}/demo', 'ChampionController@nameDemo');
+    ROute::get('/demo', 'ChampionController@demo');
 });
