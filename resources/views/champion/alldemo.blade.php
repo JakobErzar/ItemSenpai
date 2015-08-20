@@ -1,5 +1,5 @@
 @extends('app')
-@section('title', 'item senpai')
+@section('title', 'Item Senpai')
 @section('content')
     <h1>All Champs!</h1>
     @foreach($champions as $champion)

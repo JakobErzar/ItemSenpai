@@ -1,5 +1,5 @@
 @extends('app')
-@section('title', 'item senpai')
+@section('title', $champion->name)
 @section('content')
     <h1>{{ $champion->name }}</h1><img src="{{ $champion->icon }}">
     <h4>{{ $champion->role1 }}</h4>
