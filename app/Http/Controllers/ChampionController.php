@@ -2,6 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use View;
 
 use Illuminate\Http\Request;
 
@@ -10,7 +11,7 @@ use App\Champion;
 class ChampionController extends Controller {
 
 	public function showById($id) {
-         $champion = Champion::findOrFail(1)->with('spells')->get();
+         $champion = Champion::findOrFail($id)->with('spells')->get();
          return $champion;
     }
     
@@ -24,4 +25,10 @@ class ChampionController extends Controller {
          return $champion;
     }
 
+    public function nameDemo($name) {
+         $champion = Champion::where('name', '=', $name)->with('spells')->first();
+         $test = 'lol';
+         //return view('champion.demo', ['test' => 'lol']);
+         return View::make('champion.demo')->with('champion', $champion);
+    }
 }
