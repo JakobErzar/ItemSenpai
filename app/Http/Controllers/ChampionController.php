@@ -14,6 +14,10 @@ class ChampionController extends Controller {
          $champion = Champion::findOrFail($id)->with('spells')->get();
          return $champion;
     }
+	public function showByKey($key) {
+         $champion = Champion::where('key', '=', $key)->with('spells')->get();
+         return $champion;
+    }
     
 	public function showByName($name) {
          $champion = Champion::where('name', '=', $name)->with('spells')->get();
