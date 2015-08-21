@@ -6,7 +6,7 @@
         <h1>{{ $item->name }} - {{ $item->riot_id }}</h1><img src="{{ $item->icon }}">
         <h4>PlainText: {{ $item->plaintext }}</h4>
         <h4>Description: {{ $item->description }}</h4>
-        <h4>Group: {{ $item->description }}</h4>
+        <h4>Group: {{ $item->group }}</h4>
         <h4>Gold Base: {{ $item->gold_base }}, Gold Total {{ $item->gold_base }}</h4>
         
         
