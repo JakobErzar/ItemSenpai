@@ -7,11 +7,15 @@ use Illuminate\Http\Request;
 
 use App\Champion;
 use App\Spell;
+use App\Item;
+use App\ItemTags;
+use App\ItemFrom;
+use App\ItemInto;
 
 class FillDataController extends Controller {
     
 	public function champions() {
-        $cdn_ver = '5.15.1';
+        $cdn_ver = '5.16.1';
         
         $json = file_get_contents('https://global.api.pvp.net/api/lol/static-data/euw/v1.2/champion?champData=all&api_key=2767f871-228a-412a-9063-d754163404f4');
         $obj = json_decode($json);
@@ -45,4 +49,56 @@ class FillDataController extends Controller {
         return $champs;
     }
 
+    public function items() {
+        $cdn_ver = '5.16.1';
+        
+        $json = file_get_contents('https://global.api.pvp.net/api/lol/static-data/euw/v1.2/item?itemListData=all&api_key=2767f871-228a-412a-9063-d754163404f4');
+        $obj = json_decode($json);
+        
+        $items = array();
+        foreach($obj->data as $item){
+            $it = Item::firstOrNew(['riot_id' => $item->id, 'name' => $item->name]);
+            $it->icon = 'http://ddragon.leagueoflegends.com/cdn/'.$cdn_ver.'/img/item/'.$item->image->full;
+            $it->description = $item->sanitizedDescription;
+            $it->plaintext = (isset($item->plaintext)) ? $item->plaintext : '';
+            $it->group = (isset($item->group)) ? $item->group : '';
+            $it->gold_base = $item->gold->base;
+            $it->gold_total = $item->gold->total;
+            $it->depth = (isset($item->depth)) ? $item->depth : 0;
+            
+            $tags = array();
+            if(isset($item->tags)){
+                foreach($item->tags as $tag){
+                    $new_tag = ItemTags::firstOrNew(['item_id' => $item->id, 'name' => $tag]);
+                    $new_tag->save();
+                    array_push($tags, $new_tag);
+                }
+            }
+            
+            $froms = array();
+            if(isset($item->from)){
+                foreach($item->from as $from){
+                    $new_from = ItemFrom::firstOrNew(['item_id' => $item->id, 'other_item_id' => $from]);
+                    $new_from->save();
+                    array_push($froms, $new_from);
+                }
+            }
+            
+            $intos = array();
+            if(isset($item->into)){
+                foreach($item->into as $into){
+                    $new_into = ItemInto::firstOrNew(['item_id' => $item->id, 'other_item_id' => $into]);
+                    $new_into->save();
+                    array_push($intos, $new_into);
+                }
+            }
+                   
+            $it->save();
+            $it->ItemTags = $tags;
+            $it->ItemFrom = $froms;
+            $it->ItemInto = $intos;
+            array_push($items, $it);
+        }
+        return $items;
+    }
 }

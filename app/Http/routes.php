@@ -22,6 +22,7 @@ Route::controllers([
 
 Route::group(['prefix' => 'filldata'], function(){
     Route::get('champions', 'FillDataController@champions');
+    Route::get('items', 'FillDataController@items');
 });
 
 Route::group(['prefix' => 'champion'], function(){
@@ -31,4 +32,16 @@ Route::group(['prefix' => 'champion'], function(){
     Route::get('key/{key}', 'ChampionController@showByKey');
     Route::get('name/{name}/demo', 'ChampionController@nameDemo');
     ROute::get('/demo', 'ChampionController@demo');
+});
+
+Route::group(['prefix' => 'item'], function(){
+    /*
+    Route::get('id/{id}', 'ChampionController@showById');
+    Route::get('name/{name}', 'ChampionController@showByName');
+    Route::get('key/{key}', 'ChampionController@showByKey');
+    Route::get('name/{name}/demo', 'ChampionController@nameDemo');
+    */
+    Route::get('rid/{rid}', 'ItemController@showByRiotId');
+    
+    ROute::get('/demo', 'ItemController@demo');
 });
