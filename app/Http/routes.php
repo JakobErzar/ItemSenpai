@@ -23,6 +23,7 @@ Route::controllers([
 Route::group(['prefix' => 'filldata'], function(){
     Route::get('champions', 'FillDataController@champions');
     Route::get('items', 'FillDataController@items');
+    Route::get('items-maps', 'FillDataController@item_maps');
 });
 
 Route::group(['prefix' => 'champion'], function(){

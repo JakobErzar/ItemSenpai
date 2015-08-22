@@ -9,6 +9,7 @@ use App\Item;
 use App\ItemTags;
 use App\ItemFrom;
 use App\ItemInto;
+use App\ItemMaps;
 
 use View;
 
@@ -16,12 +17,12 @@ class ItemController extends Controller {
 
 	public function showByRiotId($riotid) {
          //$item = Item::where('riot_id', '=', $riotid)->with('ItemTags', 'ItemInto', 'ItemFrom')->get();
-         $item = Item::where('riot_id', '=', $riotid)->get()->first();
+         $item = Item::where('riot_id', '=', $riotid)->with('ItemMaps')->get()->first();
          return $this->getItemStuff($item);
     }
     
     public function demo() {
-         $items = Item::all();
+         $items = Item::with('ItemMaps')->get();
          $new_items = array();
          foreach ($items as $item) {
              array_push($new_items, $this->getItemStuff($item));

@@ -21,6 +21,17 @@
             <h2>No tags :(</h2>
         @endif
         
+        @if (count($item->ItemMaps))
+            <h2>Maps:</h2>
+            <ul>
+            @foreach ($item->ItemMaps as $map)
+                <li>{{ $map->map_name }}</li><br>
+            @endforeach
+            </ul>
+        @else
+            <h2>No Maps :(</h2>
+        @endif
+        
         @if (count($item->ItemFrom))
             <h2>From Items: (depth: {{ $item->depth }})</h2>
             @foreach ($item->ItemFrom as $from)

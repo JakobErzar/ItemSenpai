@@ -17,4 +17,8 @@ class Item extends Model {
     public function ItemInto() {
         return $this->hasMany('App\ItemInto', "item_id", "riot_id");
     }
+    
+    public function ItemMaps() {
+        return $this->hasMany('App\ItemMaps', "item_id", "riot_id");
+    }
 }

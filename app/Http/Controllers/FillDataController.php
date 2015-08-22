@@ -11,6 +11,7 @@ use App\Item;
 use App\ItemTags;
 use App\ItemFrom;
 use App\ItemInto;
+use App\ItemMaps;
 
 class FillDataController extends Controller {
     
@@ -92,13 +93,40 @@ class FillDataController extends Controller {
                     array_push($intos, $new_into);
                 }
             }
+            
+            // And now, get the maps at which it can be used
+           
                    
-            $it->save();
+            //$it->save();
             $it->ItemTags = $tags;
             $it->ItemFrom = $froms;
             $it->ItemInto = $intos;
             array_push($items, $it);
         }
         return $items;
+    }
+    public function item_maps() {
+        $map_names = array('1' => "Old Summoners Rift", '10' => 'Twisted Treeline', '11' => "Summoner's Rift", '12' => 'Howling Abyss');
+        
+        $maps_json = file_get_contents('https://global.api.pvp.net/api/lol/static-data/euw/v1.2/item?version=5.14.1&itemListData=maps&api_key=2767f871-228a-412a-9063-d754163404f4');
+        $map_obj = json_decode($maps_json);
+        
+        $mapses = array();
+        foreach ($map_obj->data as $item) {
+            $maps_init = array(1,10,11,12);
+            $maps = array();
+            if(isset($item->maps)){
+                $m = json_decode(json_encode($item->maps), true);
+                $maps_init = array_diff($maps_init, array_keys($m));
+            }
+            foreach ($maps_init as $m) {
+                $new_map = ItemMaps::firstOrNew(['item_id' => $item->id, 'map_id' => $m]);
+                $new_map->map_name = $map_names[strval($m)];
+                $new_map->save();
+                array_push($maps, $new_map);
+            }
+            array_push($mapses, $maps);
+        }
+       return $mapses;
     }
 }
