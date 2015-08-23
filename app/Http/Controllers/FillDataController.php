@@ -12,6 +12,7 @@ use App\ItemTags;
 use App\ItemFrom;
 use App\ItemInto;
 use App\ItemMaps;
+use App\SummonerSpell;
 
 class FillDataController extends Controller {
     
@@ -128,5 +129,23 @@ class FillDataController extends Controller {
             array_push($mapses, $maps);
         }
        return $mapses;
+    }
+    
+    public function summoner_spells() {
+        $cdn_ver = '5.16.1';
+        
+        $json = file_get_contents('https://global.api.pvp.net/api/lol/static-data/euw/v1.2/summoner-spell?spellData=image&api_key=2767f871-228a-412a-9063-d754163404f4');
+        $obj = json_decode($json);
+        
+        $spells = array();
+        foreach ($obj->data as $spell) {
+            $new_spell = SummonerSpell::firstOrNew(['riot_id' => $spell->id, 'name' => $spell->name, 'key' => $spell->key]);
+            $new_spell->icon = 'http://ddragon.leagueoflegends.com/cdn/'.$cdn_ver.'/img/spell/'.$spell->image->full;
+            $new_spell->description = $spell->description;
+            $new_spell->summoner_level = $spell->summonerLevel;
+            $new_spell->save();
+            array_push($spells, $new_spell);
+        }
+        return $spells;
     }
 }
