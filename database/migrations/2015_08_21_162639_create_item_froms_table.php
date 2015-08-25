@@ -15,8 +15,10 @@ class CreateItemFromsTable extends Migration {
 		Schema::create('item_froms', function(Blueprint $table)
 		{
 			$table->increments('id');
-            $table->integer('item_id');
-            $table->integer('other_item_id');
+            $table->integer('item_id')->unsigned();
+            $table->integer('other_item_id')->unsigned();
+            $table->foreign('item_id')->references('riot_id')->on('items')->onDelete('cascade');
+            //$table->foreign('other_item_id')->references('riot_id')->on('items')->onDelete('cascade');
 		});
 	}
 

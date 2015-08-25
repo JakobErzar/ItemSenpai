@@ -14,14 +14,15 @@ class CreateSummonerSpellsTable extends Migration {
 	{
 		Schema::create('summoner_spells', function(Blueprint $table)
 		{
-			$table->increments('id');
-            $table->integer('riot_id');
+            $table->integer('riot_id')->unsigned();
             $table->string('key');
             $table->string('name');
             $table->string('description');
             $table->string('icon');
             $table->integer('summoner_level');
 			$table->timestamps();
+            
+            $table->primary('riot_id');
 		});
 	}
 

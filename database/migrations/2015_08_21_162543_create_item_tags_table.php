@@ -15,8 +15,9 @@ class CreateItemTagsTable extends Migration {
 		Schema::create('item_tags', function(Blueprint $table)
 		{
 			$table->increments('id');
-            $table->integer('item_id');
+            $table->integer('item_id')->unsigned();
             $table->string('name');
+            $table->foreign('item_id')->references('riot_id')->on('items')->onDelete('cascade');
 		});
 	}
 

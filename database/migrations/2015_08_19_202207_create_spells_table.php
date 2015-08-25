@@ -14,15 +14,15 @@ class CreateSpellsTable extends Migration {
 	{
 		Schema::create('spells', function(Blueprint $table)
 		{
-			$table->increments('id');
-            $table->integer('riot_id');
-            $table->integer('champion_id');
+            $table->integer('champion_id')->unsigned();
             $table->string('key');
             $table->string('name');
             $table->integer('max_rank');
             $table->string('symbol');
             $table->string('icon');
             $table->timestamps();
+            
+            $table->foreign('champion_id')->references('riot_id')->on('champions')->onDelete('cascade');
 		});
 	}
 

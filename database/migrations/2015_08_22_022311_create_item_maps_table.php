@@ -14,10 +14,12 @@ class CreateItemMapsTable extends Migration {
 	{
 		Schema::create('item_maps', function(Blueprint $table)
 		{
-			$table->increments('id');
-            $table->integer('item_id');
-            $table->integer('map_id');
+            $table->increments('id');
+            $table->integer('map_id')->unsigned();
+            $table->integer('item_id')->unsigned();
             $table->string('map_name');
+            
+            $table->foreign('item_id')->references('riot_id')->on('items')->onDelete('cascade');
 		});
 	}
 

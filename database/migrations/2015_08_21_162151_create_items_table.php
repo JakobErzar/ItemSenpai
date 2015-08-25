@@ -14,8 +14,7 @@ class CreateItemsTable extends Migration {
 	{
 		Schema::create('items', function(Blueprint $table)
 		{
-			$table->increments('id');
-            $table->integer('riot_id');
+            $table->integer('riot_id')->unsigned();
             $table->string('name');
             $table->string('description');
             $table->string('plaintext');
@@ -25,6 +24,8 @@ class CreateItemsTable extends Migration {
             $table->string('depth');
             $table->string('icon');
 			$table->timestamps();
+            
+            $table->primary('riot_id');
 		});
 	}
 

@@ -34,6 +34,7 @@ class FillDataController extends Controller {
             
             $spells = array();
             $symbols = array('Q', 'W', 'E', 'R');
+            $champion->save();
             for ($i=0; $i < 4; $i++) { 
                 $spell = $champ->spells[$i];
                 $new_spell = Spell::firstOrNew(['name' => $spell->name, 'key' => $spell->key, 'champion_id' => $champ->id]);
@@ -43,9 +44,8 @@ class FillDataController extends Controller {
                 $new_spell->save();
                 array_push($spells, $new_spell);
             }
-                   
-            $champion->save();
             $champion->spells = $spells;
+                   
             array_push($champs, $champion);
         }
         return $champs;
@@ -67,6 +67,8 @@ class FillDataController extends Controller {
             $it->gold_base = $item->gold->base;
             $it->gold_total = $item->gold->total;
             $it->depth = (isset($item->depth)) ? $item->depth : 0;
+            
+            $it->save();
             
             $tags = array();
             if(isset($item->tags)){
@@ -98,7 +100,6 @@ class FillDataController extends Controller {
             // And now, get the maps at which it can be used
            
                    
-            //$it->save();
             $it->itemTags = $tags;
             $it->itemFrom = $froms;
             $it->itemInto = $intos;
