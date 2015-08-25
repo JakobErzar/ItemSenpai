@@ -99,9 +99,9 @@ class FillDataController extends Controller {
            
                    
             //$it->save();
-            $it->ItemTags = $tags;
-            $it->ItemFrom = $froms;
-            $it->ItemInto = $intos;
+            $it->itemTags = $tags;
+            $it->itemFrom = $froms;
+            $it->itemInto = $intos;
             array_push($items, $it);
         }
         return $items;

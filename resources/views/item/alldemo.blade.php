@@ -10,21 +10,21 @@
         <h4>Gold Base: {{ $item->gold_base }}, Gold Total {{ $item->gold_total }}</h4>
         
         
-        @if (count($item->ItemTags))
+        @if (count($item->itemTags))
             <h2>Tags:</h2>
             <ul>
-            @foreach ($item->ItemTags as $tag)
-                <li>{{ $tag }}</li><br>
+            @foreach ($item->itemTags as $tag)
+                <li>{{ $tag->name }}</li><br>
             @endforeach
             </ul>
         @else
             <h2>No tags :(</h2>
         @endif
         
-        @if (count($item->ItemMaps))
+        @if (count($item->itemMaps))
             <h2>Maps:</h2>
             <ul>
-            @foreach ($item->ItemMaps as $map)
+            @foreach ($item->itemMaps as $map)
                 <li>{{ $map->map_name }}</li><br>
             @endforeach
             </ul>
@@ -32,10 +32,10 @@
             <h2>No Maps :(</h2>
         @endif
         
-        @if (count($item->ItemFrom))
+        @if (count($item->itemFrom))
             <h2>From Items: (depth: {{ $item->depth }})</h2>
-            @foreach ($item->ItemFrom as $from)
-                <img src="{{ $from->icon }}" style="margin:5px">
+            @foreach ($item->itemFrom as $from)
+                <img src="{{ $from->item->icon }}" style="margin:5px">
             @endforeach
         @else
             <h2>Nothing was used for this item :(</h2>
@@ -44,7 +44,7 @@
         @if (count($item->ItemInto))
             <h2>To Items: (depth: {{ $item->depth }})</h2>
             @foreach ($item->ItemInto as $to)
-                <img src="{{ $to->icon }}" style="margin:5px">
+                <img src="{{ $to->item->icon }}" style="margin:5px">
             @endforeach
         @else
             <h2>Nothing from this item :(</h2>
