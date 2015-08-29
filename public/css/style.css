@@ -18,14 +18,16 @@ body{
 .lead {
     font-family: domoai;
     font-size: 25px;
+    margin-bottom: 40px;
 }
 .domoan {
     font-family: domoan;    
 }
 h1 {
-    font-family: kna, 'Droid Serif', Georgia, Times, serif;
-    font-size: 49px;
+    font-family: domoan, 'Droid Serif', Georgia, Times, serif;
+    font-size: 65px;
     line-height: 65px;
+    margin-bottom: 15px;
 }
 h2 {
     color:white;
