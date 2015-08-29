@@ -4,6 +4,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Spell extends Model {
 
-	protected $guarded = ['id'];
+	protected $guarded = [];
 
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ItemInto extends Model {
 
-	protected $guarded = [];
+	protected $guarded = ['id'];
     public $timestamps = false;
     
     public function item() {

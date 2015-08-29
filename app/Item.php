@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model {
 
-	protected $guarded = ['id'];
+	protected $guarded = [];
 
     public function itemTags() {
         return $this->hasMany('App\ItemTags', "item_id", "riot_id")->select(['item_id', 'name']);
@@ -20,5 +20,21 @@ class Item extends Model {
     
     public function itemMaps() {
         return $this->hasMany('App\ItemMaps', "item_id", "riot_id");
+    }
+    
+    public function itemsetBocks() {
+        return $this->belongsToMany('App\ItemsetBlock',  'items_itemset_blocks', 'id', 'riot_id')->withPivot('count', 'order')->withTimestamps();
+    }
+    
+    public function scopeFinalItem($query) {
+        return $query->doesntHave('itemInto');
+    }
+    
+    public function scopeNotGoodItemThingy($query) {
+        $ignorethem = ['HealthPotion', 'ManaPotion', 'GreenWard', 'PinkWard', 'Trinket', 'Flasks', 'DoransShowdown', 'TheBlackSpear'];
+        $ignoreid = [2050, 3170];
+        return $query->whereNotIn('group', $ignorethem)->whereNotIn('riot_id', $ignoreid)->whereHas('itemTags', function($query) {
+            return $query->where('name', '!=', 'Lane')->where('name', '!=', 'Bilgewater');
+        });
     }
 }
