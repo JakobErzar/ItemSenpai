@@ -27,7 +27,9 @@ h1 {
     font-size: 49px;
     line-height: 65px;
 }
- 
+h2 {
+    color:white;
+} 
 p {
     font-size: 14px;
     line-height: 25px;
@@ -40,4 +42,46 @@ p {
 }
 .col-md-6:hover {
     opacity: 1;
+}
+.background-champ {
+    position: relative;
+    background: #5C97FF;
+    overflow: hidden;
+    
+    width: 570px;
+    height: 275px;
+    background-position: center;
+
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;    
+}
+.background-champ .content {
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    padding: 15px;
+}
+.fun {
+    background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg');
+}
+.work {
+    background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg');    
+}
+p.senpaipls {
+    margin-top: 10px;
+    font-family: domoan;  
+    font-size: 30px;
+}
+.background-champ .content h2 {
+    font-family: domoan; 
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.background-champ .content p {
+    font-family: domoan; 
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 6px;
 }
