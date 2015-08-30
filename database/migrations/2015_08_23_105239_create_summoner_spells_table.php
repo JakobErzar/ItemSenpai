@@ -14,6 +14,7 @@ class CreateSummonerSpellsTable extends Migration {
 	{
 		Schema::create('summoner_spells', function(Blueprint $table)
 		{
+            $table->increments('id');
             $table->integer('riot_id')->unsigned();
             $table->string('key');
             $table->string('name');
@@ -22,7 +23,7 @@ class CreateSummonerSpellsTable extends Migration {
             $table->integer('summoner_level');
 			$table->timestamps();
             
-            $table->primary('riot_id');
+            $table->unique('riot_id');
 		});
 	}
 

@@ -7,7 +7,7 @@ class ItemsetBlock extends Model {
 	protected $guarded = ['id'];
     
     public function items() {
-        return $this->belongsToMany('App\Item',  'items_itemset_blocks', 'id', 'riot_id')->withPivot('count', 'order')->withTimestamps();
+        return $this->belongsToMany('App\Item',  'items_itemset_blocks', 'itemset_block_id', 'item_id')->withPivot('count', 'order')->withTimestamps();
     }
 
 }

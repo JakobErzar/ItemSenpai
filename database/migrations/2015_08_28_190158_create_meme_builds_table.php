@@ -19,6 +19,7 @@ class CreateMemeBuildsTable extends Migration {
             $table->string('description');
             $table->string('video');
             $table->string('slug');
+            $table->string('author');
 			$table->timestamps();
 		});
 	}

@@ -27,6 +27,7 @@ Route::group(['prefix' => 'api'], function() {
         Route::get('items', 'FillDataController@items');
         Route::get('items-maps', 'FillDataController@item_maps');
         Route::get('summoner-spells', 'FillDataController@summoner_spells');
+        Route::get('meme-builds', 'FillDataController@meme_builds');
     });
     
     Route::group(['prefix' => 'champion'], function(){
@@ -50,6 +51,10 @@ Route::group(['prefix' => 'api'], function() {
     
     Route::group(['prefix' => 'random'], function() {
         Route::get('build', 'RandomController@getBuild');
+    });
+    
+    Route::group(['prefix' => 'memebuilds'], function() {
+        Route::get('demo', 'MemeBuildController@demo');
     });
 });
 

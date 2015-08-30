@@ -14,6 +14,12 @@ use App\ItemInto;
 use App\ItemMaps;
 use App\SummonerSpell;
 
+use App\MemeBuild;
+use App\Itemset;
+use App\ItemsetBlock;
+
+use File;
+
 class FillDataController extends Controller {
     
 	public function champions() {
@@ -148,5 +154,94 @@ class FillDataController extends Controller {
             array_push($spells, $new_spell);
         }
         return $spells;
+    }
+    
+    public function meme_builds() {
+        $path = storage_path() . "/fill/itemsets_memebuilds.json";
+        
+        if (!File::exists($path)) {
+            throw new Exception("Invalid File");
+        }
+    
+        $file = File::get($path);
+        $obj = json_decode($file);
+        
+        $memebuilds = [];
+        foreach($obj as $itemset) {
+            $slug = \Illuminate\Support\Str::slug($itemset->name);
+            $memebuild = MemeBuild::firstOrNew(['name' => $itemset->name, 'slug' => $slug]);
+            $memebuild->description = $itemset->description;
+            $video = preg_replace("/(?:https:\/\/|http:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?v=)?/", "http://www.youtube.com/embed/", $itemset->video);
+            $memebuild->video = $video;
+            if(isset($itemset->author)) {
+                $memebuild->author = $itemset->author;
+            }
+            else {
+                $memebuild->author = 'Anverid';
+            }
+            $memebuild->save();
+            
+            // Create the itemset
+            $itemset_db = Itemset::firstOrNew(['name' => $itemset->name]);
+            $itemset_db->point1 = $itemset->spell_order->point1;
+            $itemset_db->point2 = $itemset->spell_order->point2;
+            $itemset_db->point3 = $itemset->spell_order->point3;
+            $itemset_db->max1 = $itemset->spell_order->max1;
+            $itemset_db->max2 = $itemset->spell_order->max2;
+            $itemset_db->max3 = $itemset->spell_order->max3;
+            $itemset_db->champion_id = $itemset->champion;
+            $itemset_db->summoner1 = $itemset->summoner_spells[0];
+            $itemset_db->summoner2 = $itemset->summoner_spells[1];
+            
+            $memebuild->itemset = $itemset_db;
+            $memebuild->itemset()->save($itemset_db);
+            
+            $blockStarting = ItemsetBlock::firstOrNew(['name' => 'Starting Items', 'type' => 1, 'itemset_id' => $itemset_db->id]);
+            $itemset_db->itemset_blocks()->save($blockStarting);
+            $startings_count = [];
+            foreach ($itemset->starting_items as $value) {
+                if(isset($startings_count[(string)$value])) {
+                    $startings_count[(string)$value] = $startings_count[(string)$value] + 1;
+                }
+                else {
+                    $startings_count[(string)$value] = 1;
+                }
+            }
+            
+            $counter = 0;
+            foreach ($startings_count as $key => $value) {
+                $item = Item::where('riot_id', $key)->first();
+                if (!($blockStarting->items->contains($item->id))) {
+                    $blockStarting->items()->save($item, ['count' => $value, 'order' => $counter]);
+                }
+                $counter++;
+            }
+            
+            $blockFinal = ItemsetBlock::firstOrNew(['name' => 'Final Items', 'type' => 0, 'itemset_id' => $itemset_db->id]);
+            $itemset_db->itemset_blocks()->save($blockFinal);            
+            
+            $items_count = [];
+            foreach ($itemset->items as $value) {
+                if(isset($items_count[(string)$value])) {
+                    $items_count[(string)$value] = $items_count[(string)$value] + 1;
+                }
+                else {
+                    $items_count[(string)$value] = 1;
+                }
+            }
+            
+            $counter = 0;
+            foreach ($items_count as $key => $value) {
+                $item = Item::where('riot_id', $key)->first();
+                if (!($blockFinal->items->contains($item->id))) {
+                    $blockFinal->items()->save($item, ['count' => $value, 'order' => $counter]);
+                }
+                $counter++;
+            }
+            
+            $mb = MemeBuild::where(['id' => $memebuild->id])->with('itemset.itemset_blocks.items')->first();
+            if(count($memebuilds) < 5) array_push($memebuilds, $mb);
+        }
+        return $memebuilds;
     }
 }

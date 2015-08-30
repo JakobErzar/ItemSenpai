@@ -19,6 +19,7 @@ class CreateTeamCompsTable extends Migration {
             $table->string('description');
             $table->string('slug');
             $table->string('video');
+            $table->string('author');
 			$table->timestamps();
 		});
 	}

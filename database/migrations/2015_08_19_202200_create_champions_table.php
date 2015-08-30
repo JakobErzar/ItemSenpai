@@ -14,6 +14,7 @@ class CreateChampionsTable extends Migration {
 	{
 		Schema::create('champions', function(Blueprint $table)
 		{
+            $table->increments('id');
             $table->integer('riot_id')->unsigned();
             $table->string('key');
             $table->string('name');
@@ -25,7 +26,7 @@ class CreateChampionsTable extends Migration {
             $table->string('role2');
             $table->timestamps();
             
-            $table->primary('riot_id');
+            $table->unique('riot_id');
 		});
 	}
 

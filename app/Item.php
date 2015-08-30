@@ -6,6 +6,8 @@ class Item extends Model {
 
 	protected $guarded = [];
 
+    //protected $primaryKey = 'riot_id';
+    
     public function itemTags() {
         return $this->hasMany('App\ItemTags', "item_id", "riot_id")->select(['item_id', 'name']);
     }
@@ -23,7 +25,7 @@ class Item extends Model {
     }
     
     public function itemsetBocks() {
-        return $this->belongsToMany('App\ItemsetBlock',  'items_itemset_blocks', 'id', 'riot_id')->withPivot('count', 'order')->withTimestamps();
+        return $this->belongsToMany('App\ItemsetBlock',  'items_itemset_blocks', 'item_id', 'id')->withPivot('count', 'order')->withTimestamps();
     }
     
     public function scopeFinalItem($query) {

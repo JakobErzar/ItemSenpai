@@ -11,15 +11,15 @@ class Itemset extends Model {
     }
 
     public function summoner1() {
-        return $this->hasOne('App\SummonerSpell', 'summoner1', 'riot_id');
+        return $this->hasOne('App\SummonerSpell', 'riot_id', 'summoner1');
     }
     
     public function summoner2() {
-        return $this->hasOne('App\SummonerSpell', 'summoner2', 'riot_id');
+        return $this->hasOne('App\SummonerSpell', 'riot_id', 'summoner2');
     }
     
     public function itemset_blocks() {
-        return $this->hasMany('App\ItemsetBlock', 'id', 'id');
+        return $this->hasMany('App\ItemsetBlock', 'itemset_id', 'id');
     }
     
     public function bildernus() {

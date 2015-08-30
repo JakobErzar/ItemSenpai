@@ -1,0 +1,2020 @@
+[
+  {
+	"items": [
+  	3031,
+            3006,
+  	3087,
+  	3153,
+  	3035,
+  	3142
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "ADC AHRI",
+	"champion": 103,
+	"description": "Movement speed on Q makes it easier to kite, R provides decent mobility, self peel with E",
+	"video": "https://www.youtube.com/watch?v=UGLKwu5AoAc"
+  },
+
+  {
+	"items": [
+  	3724,
+            3020,
+  	3174,
+  	3157,
+  	3089,
+  	3116
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+
+
+	"name": "JUNGLE RUNEGLAIVE SONA",
+	"champion": 37,
+	"description": "W gives her a good sustain, with runeglaive she has decent clear time, R and E are good ganking tools",
+	"video": "https://www.youtube.com/watch?v=xq3lnAgAr3M"
+  },
+
+  {
+	"items": [
+  	3115,
+            3158,
+  	3100,
+  	3089,
+  	3157,
+  	3285
+	],
+	"starting_items": [
+  	1052,
+  	2003
+	],
+	"summoner_spells": [
+  	6,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "AP TRYNDAMERE",
+	"champion": 23,
+	"description": "He has good lane sustain, provides decent damage with his abilities, annoying to deal with when fed",
+	"video": "https://www.youtube.com/watch?v=rXuTYXQD2ic"
+  },
+
+
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3115,
+  	3151,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "AP MISS FORTUNE",
+	"champion": 21,
+	"description": "MAGE-FORTUNE has AP scalings on most of her abilities making her a possible mid lane pick who provides decent damage",
+	"video": "https://www.youtube.com/watch?v=MJYEYS_DkSc"
+  },
+
+
+
+
+
+  {
+	"items": [
+  	3710,
+            3006,
+  	3115,
+  	3100,
+  	3089,
+  	3065
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "AP XIN ZHAO JUNGLE",
+	"champion": 5,
+	"description": "Every third attack he gets a heal that scales of ap, meaning he has a good sustain in junglel, he also provides decent crowd control to the team, and his ganks are scary for the enemy team",
+	"video": "https://www.youtube.com/watch?v=I5-lWzohDxk"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+	"items": [
+  	3115,
+            3006,
+  	3100,
+  	3089,
+  	3157,
+  	3124
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "Q",
+    	"point3": "E",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "AP XIN ZHAO",
+	"champion": 5,
+	"description": "Every third attack he gets a heal that scales of ap, making him hard to kill, he also provides decent crowd control to the team",
+	"video": "https://www.youtube.com/watch?v=j3Rm6y2V8GU"
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3025,
+  	3089,
+  	3157,
+  	3116
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	12
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "AP NASUS",
+	"champion": 75,
+	"description": "Wow such ap, much damage,",
+	"video": "https://www.youtube.com/watch?v=jcEVt7XKdV4"
+  },
+
+
+
+  {
+	"items": [
+  	3031,
+            3006,
+  	3087,
+  	3153,
+  	3035,
+  	3046
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "W",
+    	"point3": "Q",
+    	"max1": "W",
+    	"max2": "E",
+    	"max3": "Q"
+  	},
+	"name": "ADC VEL’KOZ",
+	"champion": 161,
+	"description": "No ad scaling on his abilities but he can self peel with them, you are going to enjoy seeing him crit and AA really fast",
+	"video": "https://www.youtube.com/watch?v=9Gdux_S3xsU"
+  },
+
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3115,
+  	3091,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1052,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "AP GNAR",
+	"champion": 150,
+	"description": "Every third attack on the same target makes him deal a lot of damage  if  you decided to build him ap, the burst is unexpected",
+	"video": "https://www.youtube.com/watch?v=aM26Sknpfd8"
+  },
+
+  {
+	"items": [
+  	3723,
+            3006,
+  	3031,
+  	3087,
+  	3072,
+  	3035
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "JINX JUNGLE",
+	"champion": 222,
+	"description": "You become a real threat to the enemy team if you come to the late game, good ganks if you land your W or E",
+	"video": "https://www.youtube.com/watch?v=W1z28xRKtqA"
+  },
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3151,
+  	3089,
+  	3157,
+  	3135
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "AP NUNU",
+	"champion": 412,
+	"description": "E and R really hurt when he is building AP, and his Q provides him with a decent sustain in lane,",
+	"video": "https://www.youtube.com/watch?v=q4-vkWDAIMI"
+  },
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3089,
+  	3110,
+  	3001,
+  	3157
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "AP AMMUMU",
+	"champion": 32,
+	"description": "Big burst and great crowd control",
+	"video": "https://www.youtube.com/watch?v=c3-FcJKs2Lg"
+  },
+
+  {
+	"items": [
+  	3091,
+            3006,
+  	3115,
+  	3157,
+  	3102,
+  	3082
+	],
+	"starting_items": [
+  	2041,
+  	2003, 2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "ATTACK SPEED LULU",
+	"champion": 117,
+	"description": "Because of her passive she gets pix autoattacking as well as you resulting in tons of damage",
+	"video": "https://www.youtube.com/watch?v=Y4pPdmbBVkI"
+  },
+
+  {
+	"items": [
+  	3031,
+            3006,
+  	3087,
+  	3072,
+  	3035,
+  	3046
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "ADC LULU",
+	"champion": 117,
+	"description": "She has good self peel with her abilities, making her hard to kill",
+	"video": "https://www.youtube.com/watch?v=OPORP2zqZvg"
+  },
+
+  {
+	"items": [
+  	3198,
+            3047,
+  	3078,
+  	3022,
+  	3110,
+  	3026
+	],
+	"starting_items": [
+  	2041,
+  	2003, 
+            2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	12
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AD BRUISER VIKTOR",
+	"champion": 112,
+	"description": "Because you will deal both magic and phisical damage it is hard to itemize against you making you a hard lane to mach up against",
+	"video": "https://www.youtube.com/watch?v=9jnjbF9t8EY"
+  },
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3115,
+  	3089,
+  	3065,
+  	3157
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	12
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP WARWICK",
+	"champion": 19,
+	"description": "He has ap scaling, great crowd control with his R and good sustain with his Q",
+	"video": "https://www.youtube.com/watch?v=PTgKJ5GEGAA"
+  },
+
+  {
+	"items": [
+  	3078,
+            3006,
+  	3087,
+  	3031,
+  	3072,
+  	3035
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "E",
+    	"point3": "Q",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "ADC LEBLANC",
+	"champion": 7,
+	"description": "Her kit provides her with crowd control and mobiliti making her harder to kill",
+	"video": "https://www.youtube.com/watch?v=FG5_CMlpseo"
+  },
+
+  {
+	"items": [
+  	3116,
+            3020,
+  	3089,
+  	3157,
+  	3135,
+  	3151
+	],
+	"starting_items": [
+  	1052,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP REK’SAI",
+	"champion": 421,
+	"description": "AP scaling on her Q in burrow form, long range on that Q making her safe in lane",
+	"video": "https://www.youtube.com/watch?v=eS0vHT84Zng"
+  },
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3025,
+  	3089,
+  	3157,
+  	3116
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	6,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "E",
+    	"point3": "Q",
+    	"max1": "W",
+    	"max2": "E",
+    	"max3": "Q"
+  	},
+	"name": "AP HECARIM",
+	"champion": 120,
+	"description": "Damage with his W and his R, good sustain while his W is active",
+	"video": "https://www.youtube.com/watch?v=8pIMizPHrJ0"
+  },
+
+  {
+	"items": [
+  	3078,
+            3047,
+  	3074,
+  	3142,
+  	3110,
+  	3026
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	12
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "AD DIANA TOP",
+	"champion": 131,
+	"description": "AD and AP damage making it hard for enemies to itemize against you, stil strong single target damage",
+	"video": "https://www.youtube.com/watch?v=BLq_ua1o548"
+  },
+
+  {
+	"items": [
+  	3710,
+            3020,
+  	3116,
+  	3151,
+  	3157,
+  	3001
+	],
+	"starting_items": [
+  	1039,
+  	3003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "R",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "R",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "AP UDYR JUNGLE",
+	"champion": 77,
+	"description": "Good damage frome his abilities and autoattacks, great sustain in jungle, solid ganks with his E",
+	"video": "https://www.youtube.com/watch?v=gyJ8U_Sf3mk"
+  },
+
+  {
+	"items": [
+  	3074,
+            3047,
+  	3078,
+  	3068,
+  	3075,
+  	3102
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	12
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "AD LEONA TOP",
+	"champion": 89,
+	"description": "Provides a lot of crowd control to the team, when the jungler ganks for you it is almost guaranteed kill because of the stun lock",
+	"video": "https://www.youtube.com/watch?v=iDITQeFOmac"
+  },
+
+  {
+	"items": [
+  	3723,
+            3047,
+  	3074,
+  	3025,
+  	3110,
+  	3065
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "Q",
+    	"point3": "E",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "JUNGLE LEONA",
+	"champion": 89,
+	"description": "Decent clear with her W, good ganks with her E as engage and stun lock with Q and R",
+	"video": "https://www.youtube.com/watch?v=V3J7evMmxYQ"
+  },
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3025,
+  	3116,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1001,
+  	2003,
+            2003, 
+            2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "Q",
+    	"point3": "E",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "AP LEONA",
+	"champion": 89,
+	"description": "She has AP scalings on her abilities making her deal decent damage, provides crowd control for the team",
+	"video": "https://www.youtube.com/watch?v=-2rOTqceVOg"
+  },
+
+  {
+	"items": [
+  	3031,
+            3009,
+  	3072,
+  	3078,
+  	3142,
+  	3035
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "FULL AD VI MID",
+	"champion": 254,
+	"description": "Has good scaling on her E, can burst people hard and fast, provides good crowd control to the team",
+	"video": "https://www.youtube.com/watch?v=oBFVF78Vxt8"
+  },
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3116,
+  	3089,
+  	3157,
+  	3135
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "AP VI MID",
+	"champion": 254,
+	"description": "great AP scaling on her E making her able to burst her target, provides crowd control to the team",
+	"video": "https://www.youtube.com/watch?v=XnnXUzDxSTU"
+  },
+
+  {
+	"items": [
+  	3078,
+            3006,
+  	3031,
+  	3153,
+  	3035,
+  	3102
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "W",
+    	"point3": "Q",
+    	"max1": "E",
+    	"max2": "W",
+    	"max3": "Q"
+  	},
+	"name": "ADC TWISTED FATE",
+	"champion": 4,
+	"description": "Every fourth attack is stronger because of his E, has self peel if he uses W right, no mana problems if you use W right",
+	"video": "https://www.youtube.com/watch?v=3kz61tEu6ks"
+  },
+
+  {
+	"items": [
+  	3004,
+            3006,
+  	3078,
+  	3072,
+  	3071,
+  	3102
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "ADC MALZAHAR",
+	"champion": 90,
+	"description": "His passive creates a minion every fourth spell that attacks the enemy, and it scales of ad so it does a lot of damage, also provide decent damage",
+	"video": "https://www.youtube.com/watch?v=lqimglaw2hQ"
+  },
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3115,
+  	3089,
+  	3157,
+  	3151
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "Q",
+    	"point3": "E",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "AP LUCIAN",
+	"champion": 236,
+	"description": "His W scales of AP and deals more damage than ad, attack speed also apply on the R in a way that he shoots more projectiles the more attack speed he has",
+	"video": "https://www.youtube.com/watch?v=mCeMHHUDcS0"
+  },
+
+  {
+	"items": [
+  	3078,
+            3006,
+  	3153,
+  	3065,
+  	3143,
+  	3110
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	12
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AD NIDALEE TOP",
+	"champion": 76,
+	"description": "Her auto attacks are a lot stronger so she can easily harras her lane opponentt",
+	"video": "https://www.youtube.com/watch?v=oumRtnsg7kE"
+  },
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3115,
+  	3089,
+  	3157,
+  	3135
+	],
+	"starting_items": [
+  	1001,
+  	2003, 
+            2003, 
+            2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "W",
+    	"point3": "Q",
+    	"max1": "E",
+    	"max2": "W",
+    	"max3": "Q"
+  	},
+	"name": "AP AATROX",
+	"champion": 266,
+	"description": "Decent scaling on his E and R, with his Q also provides crowd control, great sustain with his W",
+	"video": "https://www.youtube.com/watch?v=GgV7_NLGfz8"
+  },
+
+  {
+	"items": [
+  	3723,
+            3006,
+  	3087,
+  	3031,
+  	3072,
+  	3035
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "JUNGLE ASHE",
+	"champion": 22,
+	"description": "Solid ganks with her slow, can gank across the map because of her R which provides decent crowd control",
+	"video": "https://www.youtube.com/watch?v=bVdnO2Nx9F8"
+  },
+
+  {
+	"items": [
+  	3020,
+            3151,
+  	3135,
+  	3065,
+  	3001,
+  	3026
+	],
+	"starting_items": [
+  	1054,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	12
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "MAGIC PENETRATION MUNDO",
+	"champion": 36,
+	"description": "His Q deals a lot of damage if you have enough magic penetration, also his W scales of AP",
+	"video": "https://www.youtube.com/watch?v=Ui-Mq7iMkHg"
+  },
+
+  {
+	"items": [
+  	3031,
+            3006,
+  	3087,
+  	3153,
+  	3046,
+  	3046
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "W",
+    	"max3": "Q"
+  	},
+	"name": "CRITTLESTICKS",
+	"champion": 9,
+	"description": "Self peel with his E and Q, good sustain with his W, critical strikes with his auto attacks",
+	"video": "https://www.youtube.com/watch?v=BqJnUzTUggQ"
+  },
+
+  {
+	"items": [
+  	3151,
+            3020,
+  	3116,
+  	3089,
+  	3157,
+  	3135
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "AP FIDDLESTICKS",
+	"champion": 9,
+	"description": "Good damage with his ablities, silence and fear help him when he is dealing with an opponent, his W is good damage and sustain tool",
+	"video": "https://www.youtube.com/watch?v=amLg-kcFCM0"
+  },
+
+  {
+	"items": [
+  	3041,
+            3020,
+  	3100,
+  	3165,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP JANNA",
+	"champion": 40,
+	"description": "Her abilities scale with AP so when build AP she deals decent damage, overall usefull to the team because of her shilds, heals, knockups and movement speed buff",
+	"video": "https://www.youtube.com/watch?v=gDYQC0EXEfc"
+  },
+
+  {
+	"items": [
+  	3100,
+            3158,
+  	3115,
+  	3089,
+  	3146,
+  	3157
+	],
+	"starting_items": [
+  	1001,
+  	2003, 
+            2003, 
+            2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "W",
+    	"point3": "Q",
+    	"max1": "W",
+    	"max2": "E",
+    	"max3": "Q"
+  	},
+	"name": "AP JAX",
+	"champion": 24,
+	"description": "Because of his R every third attack does AP damage to the target, also his W is scaling with AP, he also provides crowd control to the team",
+	"video": "https://www.youtube.com/watch?v=A-fLbTZI2Ak"
+  },
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3089,
+  	3157,
+  	3116,
+  	3135
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP POPPY",
+	"champion": 78,
+	"description": "Because poppy is a hybrid she can also be build AP making her more bursty with using her E Q combo, her R is a really strong diving tool",
+	"video": "https://www.youtube.com/watch?v=xVq5kqDmN3U"
+  },
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3157,
+  	3089,
+  	3135,
+  	3026
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP PANTHEON",
+	"champion": 80,
+	"description": "He has AP scaling on his R which is a good teamfighting tool that damages a large area therefore he is able to hit the entire enemy team with it, his W also scales of AP and provides him with decent damage",
+	"video": "https://www.youtube.com/watch?v=Idptqs1fgGU"
+  },
+
+  {
+	"items": [
+  	3027,
+           3020,
+  	3151,
+  	3116,
+  	3089,
+  	3135
+	],
+	"starting_items": [
+  	1054,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP RAMUS",
+	"champion": 33,
+	"description": "His abilities scale with AP making him do a lot of damage when build AP, his R is good teamfighting tool, E is good for helping his team",
+	"video": "https://www.youtube.com/watch?v=erBuMMdgLt8"
+  },
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3089,
+  	3157,
+  	3135,
+  	3116
+	],
+	"starting_items": [
+  	1052,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "Q",
+    	"point3": "E",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "AP RENGAR",
+	"champion": 107,
+	"description": "He has AP scaling on hi W, if he does it properli he ca use it twice a row and he burst his opponent during the process",
+	"video": "https://www.youtube.com/watch?v=-vQ1gdKPpjQ"
+  },
+
+  {
+	"items": [
+  	3115,
+            3020,
+  	3100,
+  	3089,
+  	3157,
+  	3285
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "W",
+    	"point3": "Q",
+    	"max1": "E",
+    	"max2": "W",
+    	"max3": "Q"
+  	},
+	"name": "AP TRISTANA",
+	"champion": 18,
+	"description": "Her abilities scale with AP and she can burst her target, her R provides her with damage or even possible ecape, same is to be sait of her W, she gets resets on her W",
+	"video": "https://www.youtube.com/watch?v=_xhUeU35LEQ"
+  },
+
+  {
+	"items": [
+  	3151,
+            3020,
+  	3089,
+  	3157,
+  	3135,
+  	3116
+	],
+	"starting_items": [
+  	1052,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "AP ZAC",
+	"champion": 154,
+	"description": "He has AP scaling on his abilities, he provides knockups to the team, and he is able to burst his opponent",
+	"video": "https://www.youtube.com/watch?v=m_XMR3Wz56A"
+  },
+
+  {
+	"items": [
+  	3724,
+            3020,
+  	3116,
+  	3089,
+  	3157,
+  	3135
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "E",
+    	"point3": "Q",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "JUNGLE BRAND",
+	"champion": 63,
+	"description": "He has a ganking potential because of his stun, also he deals a lot of damage, with huneglave he has a decent clear time",
+	"video": "https://www.youtube.com/watch?v=g0bXnMEsxKU"
+  },
+
+  {
+	"items": [
+  	3723,
+            3020,
+  	3027,
+  	3285,
+  	3068,
+  	3157
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "JUNGLE BARD",
+	"champion": 432,
+	"description": "Great ganks with his E, good sustain with his W, nice crowd control with his Q and R",
+	"video": "https://www.youtube.com/watch?v=vgfnccfHqkM"
+  },
+
+  {
+	"items": [
+  	3027,
+  	3165,
+  	3100,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "W",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "AP BARD",
+	"champion": 432,
+	"description": "He has AP scaling on his Q which is also a good form of crowd control, he does a mix of AD and AP damage",
+	"video": "https://www.youtube.com/watch?v=_JN4hR-iYHY"
+  },
+
+  {
+	"items": [
+  	3151,
+            3020,
+  	3100,
+  	3116,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1001,
+  	2003, 
+            2003, 
+            2003,
+  	2004
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP EVELYNN",
+	"champion": 28,
+	"description": "She has AP scaling on her abilities, she is invisible and she is able to burst with her combo",
+	"video": "https://www.youtube.com/watch?v=lAKVQw5dodU"
+  },
+
+  {
+	"items": [
+  	3046,
+            3009,
+  	3172,
+  	3083,
+  	3172,
+  	3172
+	],
+	"starting_items": [
+  	1054,
+  	2003
+	],
+	"summoner_spells": [
+  	6,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "MOVEMENT SPEED GAREN",
+	"champion": 86,
+	"description": "His Q provides him with a short burst of movement speed, he can always ascape and be generally annoyin to the enemy team while spinning around",
+	"video": "https://www.youtube.com/watch?v=biqaLmpECEA"
+  },
+
+  {
+	"items": [
+  	3724,
+            3020,
+  	3027,
+  	3174,
+  	3157,
+  	3116
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "JUNGLE KARTHUS",
+	"champion": 30,
+	"description": "He has a decent clear with his Q and E, W is good for ganking, his R is a good teamfighting ability",
+	"video": "https://www.youtube.com/watch?v=VpFSEImS1GQ"
+  },
+
+  {
+	"items": [
+  	3151,
+            3020,
+  	3100,
+  	3116,
+  	3124,
+  	3135
+	],
+	"starting_items": [
+  	1001,
+  	2003, 
+            2003, 
+            2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP SHEN",
+	"champion": 98,
+	"description": "His R shield scales from AP so the shield is bigger when he is build AP, he can save his teammates from dying",
+	"video": "https://www.youtube.com/watch?v=QpE7ZBWRn88"
+  },
+
+  {
+	"items": [
+  	3165,
+            3020,
+  	3100,
+  	3089,
+  	3157,
+  	3135
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "Q",
+    	"point3": "E",
+    	"max1": "W",
+    	"max2": "Q",
+    	"max3": "E"
+  	},
+	"name": "AP SEJUANI",
+	"champion": 113,
+	"description": "She ha AP scalings on her abilities, she can burst a target easily, she provides good crowd control to the team",
+	"video": "https://www.youtube.com/watch?v=gNn8KLRfBsc"
+  },
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3089,
+  	3116,
+  	3157,
+  	3135
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	3,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "W",
+    	"point3": "Q",
+    	"max1": "E",
+    	"max2": "W",
+    	"max3": "Q"
+  	},
+	"name": "AP SHACO",
+	"champion": 35,
+	"description": "Has good AP scalings on E and W, can burst someone",
+	"video": "https://www.youtube.com/watch?v=9X6UYGxuJlU"
+  },
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3100,
+  	3116,
+  	3157,
+  	3001
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "W",
+    	"point3": "Q",
+    	"max1": "W",
+    	"max2": "E",
+    	"max3": "Q"
+  	},
+	"name": "AP TARIC",
+	"champion": 44,
+	"description": "His Q scale of AP giving him a solid heal, also his E and R making him abe to burst targets, his W makes him tanky",
+	"video": "https://www.youtube.com/watch?v=bzNBm4qBOiA"
+  },
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3174,
+  	3025,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP MALPHITE",
+	"champion": 54,
+	"description": "Good combo for bursting targets, ok AP scalings, his R is good for teamfighting",
+	"video": "https://www.youtube.com/watch?v=QAjI9CNEp6I"
+  },
+
+  {
+	"items": [
+  	3031,
+            3006,
+  	3072,
+  	3087,
+  	3046,
+  	3035
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	7
+	],
+	"spell_order":
+  	{
+    	"point1": "E",
+    	"point2": "Q",
+    	"point3": "W",
+    	"max1": "E",
+    	"max2": "Q",
+    	"max3": "W"
+  	},
+	"name": "ADC THRESH",
+	"champion": 412,
+	"description": "Passive on his E gives him a strong autoattack, can self peel and not die easily",
+	"video": "https://www.youtube.com/watch?v=0PtwdY0Ji4I"
+  },
+
+  {
+	"items": [
+  	3027,
+            3020,
+  	3165,
+  	3089,
+  	3157,
+  	3135
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "E",
+    	"max3": "W"
+  	},
+	"name": "AP THRESH",
+	"champion": 412,
+	"description": "He has AP scalings on Q and E making him a possible mid lane pick, he gain tankines with W passive",
+	"video": "https://www.youtube.com/watch?v=VCrHSJXHpR0"
+  },
+
+  {
+	"items": [
+  	3726,
+            3006,
+  	3078,
+  	3031,
+  	3153,
+  	3035
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "Q",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "JUNGLE TWISTED FATE",
+	"champion": 412,
+	"description": "Great ganks with his R, decent jungle clear, provides crowd control to the team",
+	"video": "https://www.youtube.com/watch?v=oSBuPLSLu-A"
+  },
+
+  {
+	"items": [
+  	3100,
+            3020,
+  	3151,
+  	3116,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1076,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "Q",
+    	"point2": "E",
+    	"point3": "W",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "AP ALISTAR",
+	"champion": 12,
+	"description": "He has decent AP scalings on his abilities, he provides crowd control for his team, he has sustain with his E",
+	"video": "https://www.youtube.com/watch?v=ciTUkEkla5I"
+  },
+
+  {
+	"items": [
+  	3165,
+            3020,
+  	3100,
+  	3285,
+  	3089,
+  	3157
+	],
+	"starting_items": [
+  	1055,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	14
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "Q",
+    	"point3": "E",
+    	"max1": "Q",
+    	"max2": "W",
+    	"max3": "E"
+  	},
+	"name": "AP ASHE",
+	"champion": 22,
+	"description": "Her R scales with AP and is a great engaging ability",
+	"video": "https://www.youtube.com/watch?v=_Qteg5sSK28"
+  },
+
+  {
+	"items": [
+  	3709,
+            3047,
+  	3025,
+  	3110,
+  	3065,
+  	3083
+	],
+	"starting_items": [
+  	1039,
+  	2003,
+  	2003
+	],
+	"summoner_spells": [
+  	4,
+  	11
+	],
+	"spell_order":
+  	{
+    	"point1": "W",
+    	"point2": "E",
+    	"point3": "Q",
+    	"max1": "W",
+    	"max2": "E",
+    	"max3": "Q"
+  	},
+	
+	"name": "JUNGLE TARIC",
+	"champion": 44,
+	"description": "E is good gankig tool, his Q provides him with decent sustain, he is pretty tanky bacause of his W",
+	"video": "https://www.youtube.com/watch?v=9U3fNx-3Yro"
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ class CreateItemsItemsetBlocksTable extends Migration {
             $table->integer('order')->unsigned();
 			$table->timestamps();
             
-            $table->foreign('item_id')->references('riot_id')->on('items')->onDelete('cascade');
+            $table->foreign('item_id')->references('id')->on('items')->onDelete('cascade');
             $table->foreign('itemset_block_id')->references('id')->on('itemset_blocks')->onDelete('cascade');
 		});
 	}

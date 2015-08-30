@@ -14,6 +14,7 @@ class CreateSpellsTable extends Migration {
 	{
 		Schema::create('spells', function(Blueprint $table)
 		{
+            $table->increments('id');
             $table->integer('champion_id')->unsigned();
             $table->string('key');
             $table->string('name');

@@ -6,7 +6,7 @@ class MemeBuild extends Model {
 
 	protected $guarded = ['id'];
     
-    public function itemsets() {
+    public function itemset() {
         return $this->morphMany('App\Itemset', 'bildernus');
     }
 }
