@@ -8,17 +8,22 @@
     </div>
     <div class="row text-center choice">
         <div class="col-md-6 pull-left">
-            <div class="background-champ fun">
+            <div class="background-champ fun" ng-style="{'background-image':'url('+fun.background_url+')'}">
                 <div class="content">
                     <h2>HAVE FUN!</h2>
                     <p>fun builds and teamcomps!</p>
                     <p>random builds!</p>
                     <p>special game modes!</p>
+                    <div class="items">
+                        <div class="item" ng-repeat="item in fun.items">
+                            <img src="{{ item.icon }}" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-6 pull-left">
-            <div class="background-champ work">
+            <div class="background-champ work" ng-style="{'background-image':'url('+work.background_url+')'}">
                 <div class="content">
                     <h2>TRYHARD!</h2>
                     <p>best winrate builds!</p>

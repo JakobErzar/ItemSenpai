@@ -28,10 +28,31 @@ itemSenpai.config(function($routeProvider, $locationProvider) {
 });
 
 
+itemSenpai.factory('firstPageService', function($http) {
+    return {
+        getFun : function() {
+            return $http.get('/api/random/build');
+        }
+    }
+})
+
+
+
 // create the controller and inject Angular's $scope
-itemSenpai.controller('mainController', function($scope) {
+itemSenpai.controller('mainController', function($scope, firstPageService) {
     // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
+    $scope.fun = {};
+    $scope.fun.background_url = 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg';
+    firstPageService.getFun().success(function (res) {
+        $scope.fun.background_url = res.champion.splash;
+        $scope.fun.items = res.items;       
+    });
+    
+    $scope.work = {}
+    $scope.work.background_url = 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg';
+    firstPageService.getFun().success(function (res) {
+        $scope.work.background_url = res.champion.splash;        
+    });
 });
 
 itemSenpai.controller('aboutController', function($scope) {
