@@ -15,10 +15,15 @@ class CreateWinrateBuildsTable extends Migration {
 		Schema::create('winrate_builds', function(Blueprint $table)
 		{
 			$table->increments('id');
-            $table->double('winrate');
-            $table->boolean('bestrate'); // true -> best winrate, false -> most frequent
-            $table->integer('gamers');
+            $table->string('winrate');
+            $table->string('bestrate'); // true -> best winrate, false -> most frequent
+            $table->integer('games');
+            $table->string('lane');
+            $table->integer('order');
+            $table->integer('champion_id')->unsigned();
 			$table->timestamps();
+            
+            $table->foreign('champion_id')->references('riot_id')->on('champions')->onDelete('cascade');
 		});
 	}
 

@@ -23,11 +23,14 @@ Route::controllers([
 */
 Route::group(['prefix' => 'api'], function() {
     Route::group(['prefix' => 'filldata'], function(){
+        Route::get('/', 'FillDataController@getIndex');
         Route::get('champions', 'FillDataController@champions');
         Route::get('items', 'FillDataController@items');
         Route::get('items-maps', 'FillDataController@item_maps');
         Route::get('summoner-spells', 'FillDataController@summoner_spells');
         Route::get('meme-builds', 'FillDataController@meme_builds');
+        Route::get('team-comps', 'FillDataController@team_comps');
+        Route::get('winrate-builds/{from}/{to}', 'FillDataController@winrate_builds');
     });
     
     Route::group(['prefix' => 'champion'], function(){

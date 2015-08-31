@@ -1,0 +1,563 @@
+[
+    {
+        "name": "Medic Force",
+        "description": "Everyone on the team provide a heal which is used to keep your team members alive, making you hard to deal with when you are together ",
+        "video": "https://www.youtube.com/watch?v=fIOgfmfka5I",
+        "champions": [
+            44,
+            76,
+            16,
+            40,
+            37
+        ],
+        "itemsets": [
+            {
+                "items": [
+                    3222,
+                    3065,
+                    3047,
+                    3025,
+                    3110
+                ],
+                "starting_items": [
+                    1054,
+                    2003
+                ],
+                "summoner_spells": [
+                    4,
+                    7
+                ],
+                "spell_order": {
+                    "point1": "E",
+                    "point2": "Q",
+                    "point3": "W",
+                    "max1": "W",
+                    "max2": "Q",
+                    "max3": "E"
+                },
+                "champion": 44
+            },
+            {
+                "items": [
+                    3222,
+                    3065,
+                    3100,
+                    3020,
+                    3089,
+                    3285
+                ],
+                "starting_items": [
+                    1056,
+                    2003,
+                    2003
+                ],
+                "summoner_spells": [
+                    4,
+                    7
+                ],
+                "spell_order": {
+                    "point1": "E",
+                    "point2": "Q",
+                    "point3": "W",
+                    "max1": "E",
+                    "max2": "Q",
+                    "max3": "W"
+                },
+                "champion": 76
+            },
+            {
+                "items": [
+                    3222,
+                    3065,
+                    3020,
+                    3089,
+                    3285,
+                    3116
+                ],
+                "starting_items": [
+                    1001,
+                    2003,
+                    2003,
+                    2003,
+                    2003
+                ],
+                "summoner_spells": [
+                    4,
+                    7
+                ],
+                "spell_order": {
+                    "point1": "W",
+                    "point2": "Q",
+                    "point3": "E",
+                    "max1": "W",
+                    "max2": "Q",
+                    "max3": "E"
+                },
+                "champion": 16
+            },
+            {
+                "items": [
+                    3222,
+                    3065,
+                    3020,
+                    3151,
+                    3089,
+                    3285
+                ],
+                "starting_items": [
+                    1001,
+                    2003,
+                    2003,
+                    2003,
+                    2003
+                ],
+                "summoner_spells": [
+                    4,
+                    7
+                ],
+                "spell_order": {
+                    "point1": "E",
+                    "point2": "Q",
+                    "point3": "W",
+                    "max1": "Q",
+                    "max2": "E",
+                    "max3": "W"
+                },
+                "champion": 40
+            },
+            {
+                "items": [
+                    3222,
+                    3065,
+                    3020,
+                    3089,
+                    3285,
+                    3100
+                ],
+                "starting_items": [
+                    1001,
+                    2003,
+                    2003,
+                    2003,
+                    2003
+                ],
+                "summoner_spells": [
+                    4,
+                    7
+                ],
+                "spell_order": {
+                    "point1": "Q",
+                    "point2": "W",
+                    "point3": "E",
+                    "max1": "W",
+                    "max2": "Q",
+                    "max3": "E"
+                },
+                "champion": 37
+            }
+        ]
+    },
+    {
+        "name": "The strike team",
+        "description": "Even when you think you are safe we will be there to ruin your day! These champions can travel across the map with their ultimate abilities and catch unexpected enemies and kill them",
+        "video": "https://www.youtube.com/watch?v=asLb3gZERmk",
+        "champions": [
+            56,
+            421,
+            4,
+            80,
+            98
+        ]
+    },
+    {
+        "name": "The knockup legion",
+        "description": "Everyone on the team have an ability that knocks up enemies, resulting in a funny crowd control lock, a good team fighting team",
+        "video": "https://www.youtube.com/watch?v=asLb3gZERmk",
+        "champions": [
+            59,
+            31,
+            40,
+            266,
+            12
+        ]
+    },
+    {
+        "name": "Shield squadron",
+        "description": "Everyone on the team have an ability that produces a shield that protects your allies, when the team is grouped up the shields are present all the time making the harder to kill",
+        "video": "https://www.youtube.com/watch?v=QQ6IDfangLY",
+        "champions": [
+            412,
+            43,
+            117,
+            40,
+            99,
+            98
+        ]
+    },
+    {
+        "name": "The Jump squad",
+        "description": "Everyone on the team have an ability that makes the champion jump, the tactic with this combination is that everyone jumps on the enemies fucus someone and together kill them",
+        "video": "https://www.youtube.com/watch?v=5rF2kq5jGuk",
+        "champions": [
+            18,
+            150,
+            154,
+            121,
+            115
+        ]
+    },
+    {
+        "name": "The Dunk squad",
+        "description": "The dunks this team provides will make the enemy team “throw” ",
+        "video": "https://www.youtube.com/watch?v=g9XZQttjc-g",
+        "champions": [
+            121,
+            122,
+            59,
+            24,
+            18
+        ],
+        "itemsets": [
+            {
+                "items": [
+                    3046,
+                    3117,
+                    3800,
+                    3069,
+                    3087,
+                    3074
+                ],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "champion": 121
+            },
+            {
+                "items": [
+                    3046,
+                    3117,
+                    3800,
+                    3069,
+                    3087,
+                    3074
+                ],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "champion": 122
+            },
+            {
+                "items": [
+                    3046,
+                    3117,
+                    3800,
+                    3069,
+                    3087,
+                    3074
+                ],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "champion": 59
+            },
+            {
+                "items": [
+                    3046,
+                    3117,
+                    3800,
+                    3069,
+                    3087,
+                    3074
+                ],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "champion": 24
+            },
+            {
+                "items": [
+                    3046,
+                    3117,
+                    3800,
+                    3069,
+                    3087,
+                    3074
+                ],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "champion": 18
+            }
+        ]
+    },
+    {
+        "name": "The Stealth troupe",
+        "description": "Everyone on the team have an ability that makes them go invisible, the whole team together can attack an enemy and he will never expect that every one just came to kill him, i hope he likes surprises",
+        "video": "https://www.youtube.com/watch?v=4j5_GXRl1e0",
+        "champions": [
+            17,
+            121,
+            91,
+            28,
+            29,
+            107,
+            35
+        ]
+    },
+    {
+        "name": "The Revive Bungaloo",
+        "description": "Everyone on the team have some kind of ability that makes them come back to life, and if we combine that with guardian angel your team has twice more lives than the enemy team, making you overpowerd",
+        "video": "https://www.youtube.com/watch?v=7BT2NvvnV5o",
+        "champions": [
+            154,
+            26,
+            83,
+            266,
+            34
+        ],
+        "itemsets": [
+            {
+                "items": [
+                    3026,
+                    3116,
+                    3020,
+                    3089,
+                    3157,
+                    3151
+                ],
+                "starting_items": [],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "spell_order": {
+                    "point1": "E",
+                    "point2": "Q",
+                    "point3": "W",
+                    "max1": "Q",
+                    "max2": "E",
+                    "max3": "W"
+                },
+                "champion": 154
+            },
+            {
+                "items": [
+                    3026,
+                    3020,
+                    3089,
+                    3157,
+                    3135,
+                    3285
+                ],
+                "starting_items": [],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "spell_order": {
+                    "point1": "Q",
+                    "point2": "W",
+                    "point3": "E",
+                    "max1": "Q",
+                    "max2": "E",
+                    "max3": "W"
+                },
+                "champion": 26
+            },
+            {
+                "items": [
+                    3026,
+                    3004,
+                    3078,
+                    3111,
+                    3065,
+                    3110
+                ],
+                "starting_items": [],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "spell_order": {
+                    "point1": "E",
+                    "point2": "W",
+                    "point3": "Q",
+                    "max1": "E",
+                    "max2": "Q",
+                    "max3": "W"
+                },
+                "champion": 83
+            },
+            {
+                "items": [
+                    3026,
+                    3153,
+                    3047,
+                    3065,
+                    3074,
+                    3742
+                ],
+                "starting_items": [
+                    1055,
+                    2003
+                ],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "spell_order": {
+                    "point1": "Q",
+                    "point2": "E",
+                    "point3": "W",
+                    "max1": "E",
+                    "max2": "W",
+                    "max3": "Q"
+                },
+                "champion": 266
+            },
+            {
+                "items": [
+                    3026,
+                    3003,
+                    3020,
+                    3089,
+                    3157,
+                    3135
+                ],
+                "starting_items": [
+                    1056,
+                    2003,
+                    2003
+                ],
+                "summoner_spells": [
+                    4,
+                    12
+                ],
+                "spell_order": {
+                    "point1": "Q",
+                    "point2": "W",
+                    "point3": "E",
+                    "max1": "Q",
+                    "max2": "W",
+                    "max3": "E"
+                },
+                "champion": 34
+            }
+        ]
+    },
+    {
+        "name": "The Speed Patrol ",
+        "description": "",
+        "video": "https://www.youtube.com/watch?v=n8zqmkK5owo",
+        "champions": [
+            61,
+            15,
+            126,
+            43,
+            120
+        ],
+        "itemsets": [
+            {
+                "summoner_spells": [
+                    6,
+                    12
+                ],
+                "champion": 61
+            },
+            {
+                "summoner_spells": [
+                    6,
+                    12
+                ],
+                "champion": 15
+            },
+            {
+                "summoner_spells": [
+                    6,
+                    12
+                ],
+                "champion": 126
+            },
+            {
+                "summoner_spells": [
+                    6,
+                    12
+                ],
+                "champion": 43
+            },
+            {
+                "summoner_spells": [
+                    6,
+                    12
+                ],
+                "champion": 120
+            }
+        ]
+    },
+    {
+        "name": "Global ultimates",
+        "description": "Every member of the team has a global ultimate ability, which is used in a fun attempt to slay the enemies",
+        "video": "https://www.youtube.com/watch?v=4j5_GXRl1e0",
+        "champions": [
+            22,
+            222,
+            119,
+            81,
+            30,
+            41
+        ]
+    },
+    {
+        "name": "The Void team",
+        "description": "This team comp does not have a team fighting purpose but it is fun to play with your friends if you are here just to enjoy yourself, i am sure that if you get fed the enemies will aVOID you ",
+        "video": "https://www.youtube.com/watch?v=eH5VHUvGqGQ",
+        "champions": [
+            31,
+            121,
+            96,
+            421,
+            161,
+            90,
+            38
+        ]
+    },
+    {
+        "name": "The Demacia team",
+        "description": "These champions are all from Demacia so you can freely yell “For Demacia” when you are slaying the enemy champions",
+        "video": "https://www.youtube.com/watch?v=wBGax7XrYa4",
+        "champions": [
+            86,
+            59,
+            5,
+            99,
+            3,
+            133,
+            102,
+            10
+        ]
+    },
+    {
+        "name": "The Yordle comp stomp",
+        "description": "They might be small but do not underestimate the power of the yordle team",
+        "video": "https://www.youtube.com/watch?v=Pdn6Wqwg7D8",
+        "champions": [
+            42,
+            117,
+            74,
+            150,
+            85,
+            78,
+            68,
+            17,
+            18,
+            45,
+            115,
+            32
+        ]
+    }
+]
