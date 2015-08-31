@@ -1,0 +1,501 @@
+[
+    {
+        "role": "Marksman",
+        "itemset_blocks": [
+            {
+                "name": "Starting Items",
+                "hideIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1055,
+                    2003
+                ]
+            },
+            {
+                "name": "Boots",
+                "type": 2,
+                "items": [
+                    1001,
+                    3006,
+                    3047,
+                    3020,
+                    3158,
+                    3111,
+                    3117,
+                    3009
+                ]
+            },
+            {
+                "name": "Starting Items - Jungle",
+                "showIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1039,
+                    2003,
+                    2003
+                ]
+            },
+            {
+                "name": "Jungle Items",
+                "showIfSummonerSpell": 11,
+                "type": 2,
+                "items": [
+                    3706,
+                    3713,
+                    3715,
+                    3711
+                ]
+            },
+            {
+                "name": "Offensive Items",
+                "type": 2,
+                "items": [
+                    3031,
+                    3087,
+                    3072,
+                    3078,
+                    3153,
+                    3142,
+                    3172,
+                    3046,
+                    3035,
+                    3141
+                ]
+            },
+            {
+                "name": "Defensive items",
+                "type": 2,
+                "items": [
+                    3102,
+                    3026,
+                    3139,
+                    3156
+                ]
+            }
+        ]
+    },
+    {
+        "role": "Support",
+        "itemset_blocks": [
+            {
+                "name": "Starting Items",
+                "hideIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    3301,
+                    3302,
+                    3303,
+                    2003,
+                    2004
+                ]
+            },
+            {
+                "name": "Boots",
+                "type": 2,
+                "items": [
+                    1001,
+                    3006,
+                    3047,
+                    3020,
+                    3158,
+                    3111,
+                    3117,
+                    3009
+                ]
+            },
+            {
+                "name": "Starting Items - Jungle",
+                "showIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1039,
+                    2003,
+                    2003
+                ]
+            },
+            {
+                "name": "Jungle Items",
+                "showIfSummonerSpell": 11,
+                "type": 2,
+                "items": [
+                    3706,
+                    3713,
+                    3715,
+                    3711
+                ]
+            },
+            {
+                "name": "Offensive Items",
+                "type": 2,
+                "items": [
+                    3050,
+                    3060,
+                    3800,
+                    3023,
+                    3157
+                ]
+            },
+            {
+                "name": "Defensive items",
+                "type": 2,
+                "items": [
+                    3069,
+                    3401,
+                    3092,
+                    2049,
+                    3512,
+                    3222
+                ]
+            }
+        ]
+    },
+    {
+        "role": "Mage",
+        "itemset_blocks": [
+            {
+                "name": "Starting Items",
+                "hideIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1056,
+                    1001,
+                    1052,
+                    2003,
+                    2004
+                ]
+            },
+            {
+                "name": "Boots",
+                "type": 2,
+                "items": [
+                    1001,
+                    3006,
+                    3047,
+                    3020,
+                    3158,
+                    3111,
+                    3117,
+                    3009
+                ]
+            },
+            {
+                "name": "Starting Items - Jungle",
+                "showIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1039,
+                    2003,
+                    2003
+                ]
+            },
+            {
+                "name": "Jungle Items",
+                "showIfSummonerSpell": 11,
+                "type": 2,
+                "items": [
+                    3706,
+                    3713,
+                    3715,
+                    3711
+                ]
+            },
+            {
+                "name": "Offensive Items",
+                "type": 2,
+                "items": [
+                    3165,
+                    3100,
+                    3285,
+                    3023,
+                    3089,
+                    3135,
+                    3151,
+                    3027,
+                    3115,
+                    3023,
+                    3041
+                ]
+            },
+            {
+                "name": "Defensive items",
+                "type": 2,
+                "items": [
+                    3001,
+                    3116,
+                    3003,
+                    3102,
+                    3026
+                ]
+            }
+        ]
+    },
+    {
+        "role": "Fighter",
+        "itemset_blocks": [
+            {
+                "name": "Starting Items",
+                "hideIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1055,
+                    1036,
+                    2003
+                ]
+            },
+            {
+                "name": "Boots",
+                "type": 2,
+                "items": [
+                    1001,
+                    3006,
+                    3047,
+                    3020,
+                    3158,
+                    3111,
+                    3117,
+                    3009
+                ]
+            },
+            {
+                "name": "Starting Items - Jungle",
+                "showIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1039,
+                    2003,
+                    2003
+                ]
+            },
+            {
+                "name": "Jungle Items",
+                "showIfSummonerSpell": 11,
+                "type": 2,
+                "items": [
+                    3706,
+                    3713,
+                    3715,
+                    3711
+                ]
+            },
+            {
+                "name": "Offensive Items",
+                "type": 2,
+                "items": [
+                    3153,
+                    3071,
+                    3087,
+                    3142,
+                    3072,
+                    3031,
+                    3046,
+                    3172,
+                    3078,
+                    3053,
+                    3074,
+                    3748,
+                    3141
+                ]
+            },
+            {
+                "name": "Defensive items",
+                "type": 2,
+                "items": [
+                    3156,
+                    3102,
+                    3026,
+                    3022,
+                    3110,
+                    3065,
+                    3742
+                ]
+            }
+        ]
+    },
+    {
+        "role": "Tank",
+        "itemset_blocks": [
+            {
+                "name": "Starting Items",
+                "hideIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1055,
+                    1054,
+                    1036,
+                    1029,
+                    1026,
+                    2003
+                ]
+            },
+            {
+                "name": "Boots",
+                "type": 2,
+                "items": [
+                    1001,
+                    3006,
+                    3047,
+                    3020,
+                    3158,
+                    3111,
+                    3117,
+                    3009
+                ]
+            },
+            {
+                "name": "Starting Items - Jungle",
+                "showIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1039,
+                    2003,
+                    2003
+                ]
+            },
+            {
+                "name": "Jungle Items",
+                "showIfSummonerSpell": 11,
+                "type": 2,
+                "items": [
+                    3706,
+                    3713,
+                    3715,
+                    3711
+                ]
+            },
+            {
+                "name": "Offensive Items",
+                "type": 2,
+                "items": [
+                    3748,
+                    3071,
+                    3091
+                ]
+            },
+            {
+                "name": "Defensive items",
+                "type": 2,
+                "items": [
+                    3068,
+                    3075,
+                    3083,
+                    3143,
+                    3102,
+                    3110,
+                    3025,
+                    3022,
+                    3027,
+                    3800,
+                    3026,
+                    3065,
+                    3742,
+                    3190
+                ]
+            }
+        ]
+    },
+    {
+        "role": "Assassin",
+        "itemset_blocks": [
+            {
+                "name": "Starting ItemsAP",
+                "hideIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1056,
+                    1052,
+                    1001,
+                    2003,
+                    2004
+                ]
+            },
+            {
+                "name": "Starting ItemsAD",
+                "hideIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1055,
+                    1036,
+                    1001,
+                    2003
+                ]
+            },
+            {
+                "name": "Boots",
+                "type": 2,
+                "items": [
+                    1001,
+                    3006,
+                    3047,
+                    3020,
+                    3158,
+                    3111,
+                    3117,
+                    3009
+                ]
+            },
+            {
+                "name": "Starting Items - Jungle",
+                "showIfSummonerSpell": 11,
+                "type": 1,
+                "items": [
+                    1039,
+                    2003,
+                    2003
+                ]
+            },
+            {
+                "name": "Jungle Items",
+                "showIfSummonerSpell": 11,
+                "type": 2,
+                "items": [
+                    3706,
+                    3713,
+                    3715,
+                    3711
+                ]
+            },
+            {
+                "name": "Offensive ItemsAP",
+                "type": 2,
+                "items": [
+                    3100,
+                    3135,
+                    3146,
+                    3285,
+                    3089
+                ]
+            },
+            {
+                "name": "Offensive ItemsAD",
+                "type": 2,
+                "items": [
+                    3074,
+                    3087,
+                    3142,
+                    3153,
+                    3035,
+                    3072,
+                    3031
+                ]
+            },
+            {
+                "name": "Defensive itemsAP",
+                "type": 2,
+                "items": [
+                    3102,
+                    3026,
+                    3157
+                ]
+            },
+            {
+                "name": "Defensive itemsAD",
+                "type": 2,
+                "items": [
+                    3139,
+                    3102,
+                    3026
+                ]
+            }
+        ]
+    }
+]

@@ -33,10 +33,8 @@ class Item extends Model {
     }
     
     public function scopeNotGoodItemThingy($query) {
-        $ignorethem = ['HealthPotion', 'ManaPotion', 'GreenWard', 'PinkWard', 'Trinket', 'Flasks', 'DoransShowdown', 'TheBlackSpear'];
-        $ignoreid = [2050, 3170];
-        return $query->whereNotIn('group', $ignorethem)->whereNotIn('riot_id', $ignoreid)->whereHas('itemTags', function($query) {
-            return $query->where('name', '!=', 'Lane')->where('name', '!=', 'Bilgewater');
-        });
+        $ignoreGroup = ['HealthPotion', 'ManaPotion', 'GreenWard', 'PinkWard', 'Trinket', 'Flasks', 'DoransShowdown', 'TheBlackSpear'];
+        $ignoreID = [2050, 3170];
+        return $query->whereNotIn('group', $ignoreGroup)->whereNotIn('riot_id', $ignoreID);
     }
 }

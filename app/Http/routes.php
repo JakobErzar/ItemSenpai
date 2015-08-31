@@ -30,6 +30,7 @@ Route::group(['prefix' => 'api'], function() {
         Route::get('summoner-spells', 'FillDataController@summoner_spells');
         Route::get('meme-builds', 'FillDataController@meme_builds');
         Route::get('team-comps', 'FillDataController@team_comps');
+        Route::get('role-builds', 'FillDataController@role_builds');
         Route::get('winrate-builds/{from}/{to}', 'FillDataController@winrate_builds');
     });
     
@@ -54,6 +55,7 @@ Route::group(['prefix' => 'api'], function() {
     
     Route::group(['prefix' => 'random'], function() {
         Route::get('build', 'RandomController@getBuild');
+        Route::get('items', 'RandomController@getItems');
     });
     
     Route::group(['prefix' => 'memebuilds'], function() {
