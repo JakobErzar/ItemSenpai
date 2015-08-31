@@ -33,7 +33,7 @@ class Item extends Model {
     }
     
     public function scopeNotGoodItemThingy($query) {
-        $ignoreGroup = ['HealthPotion', 'ManaPotion', 'GreenWard', 'PinkWard', 'Trinket', 'Flasks', 'DoransShowdown', 'TheBlackSpear'];
+        $ignoreGroup = ['HealthPotion', 'ManaPotion', 'GreenWards', 'PinkWards', 'Trinket', 'Flasks', 'DoransShowdown', 'TheBlackSpear'];
         $ignoreID = [2050, 3170];
         return $query->whereNotIn('group', $ignoreGroup)->whereNotIn('riot_id', $ignoreID);
     }
