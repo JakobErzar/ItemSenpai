@@ -136,6 +136,7 @@ itemSenpai.controller('funBuildController', function($scope, funBuildService, $s
             $scope.$parent.video = $sce.trustAsHtml(vid);
             $scope.$parent.champions = [{image: res.itemset[0].champion.splash} ];
             $scope.$parent.itemsets = [res.itemset[0]];
+            $scope.$parent.download = '/api/memebuild/make/'+res.id;
         })
         
     }

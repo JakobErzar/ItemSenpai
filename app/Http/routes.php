@@ -62,6 +62,8 @@ Route::group(['prefix' => 'api'], function() {
     Route::group(['prefix' => 'memebuild'], function() {
         Route::get('demo', 'MemeBuildController@demo');
         //Route::get('all', 'MemeBuildController@getAll');
+        Route::get('make/{id}', 'MemeBuildController@make');
+        Route::get('teach/{id}', 'MemeBuildController@teach');
         Route::get('random', 'MemeBuildController@random');
     });
     
