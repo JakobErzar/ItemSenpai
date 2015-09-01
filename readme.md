@@ -1,97 +1,61 @@
-# Laravel 5.0 on OpenShift #
-[Laravel](http://laravel.com/) is a free, open source PHP web application framework, 
-designed for the development of model–view–controller (MVC) web applications.
+# ItemSenpai #
+[www.itemsenpai.xyz](http://www.itemsenpai.xyz)
+ItemSenpai is a website that provides you with everything you want from League of Legends item sets!
+Want to have some fun? Sure! Get some itemsets with random builds, various user-commited item builds or team comps! Build the items from the sets and have fun with your friends while playing seriously OP builds like AD Thresh!
+Want to improve your game? Well of course! One way to improve it would definitely be with downloading the best winrate & most frequent items and itemsets for specific roles! No more people telling you what to buy or looking it up on other sites!
 
-This QuickStart was created to make it easy to get started with Laravel 5.0 on
-OpenShift.
+The website was built for the [Riot Games API Challenge 2.0](https://developer.riotgames.com/discussion/announcements/show/2lxEyIcE)
 
-The simplest way to install this application is to use the [OpenShift
-QuickStart](https://hub.openshift.com/quickstarts/115-laravel-5-0). If 
-you'd like to install it manually, follow [these directions](#manual-installation).
+## Frameworks used ##
+For the backend, we used [Laravel](http://laravel.com/), a PHP MVC framework and or the frontend, we used [AngularJS](https://angularjs.org/)
 
-## OpenShift Considerations ##
-These are some special considerations you may need to keep in mind when
-running your application on OpenShift.
+Hosting was provided by [OpenShift](https://www.openshift.com/), which allowed to install Laravel with [OpenShift
+QuickStart](https://hub.openshift.com/quickstarts/115-laravel-5-0)
 
-### Local vs. Remote Development ###
-This Laravel QuickStart provides separate `.env` configuration files for both local and 
-remote development, found at `.env` and `.openshift/.env` respectively. When the local 
-repo is pushed to OpenShift `.env` is overwritten with the `.openshift/.env` file.
+## Installation on your own system ##
+In order to run this website, you need to have PHP 5.4 (with some [extensions](http://laravel.com/docs/5.0#server-requirements)) and MySQL 5.5 installed. 
+If you have problems running the application this way, you can also try installing [Laravel Homestead](http://laravel.com/docs/5.0/homestead), which I used myself and there shouldn't be any problems.
 
-### Remote Development ###
-Your application is configured to automatically use your OpenShift MySQL or PostgreSQL 
-database in when deployed on OpenShift using [OpenShift Environment Variables](https://developers.openshift.com/en/managing-environment-variables.html).
+You also need to tell Laravel how to use the database. You can do this by editing the .env file in the root directory and change the appropriate settings.
+After that, you should run the command php artisan migrate, which will create the database tables.
+Once your database was built, you can seed it by going to (application root url)/api/filldata and clicking the links in the order displayed - click the link, wait for it to load, and then click the next one.
+The project should be setup after that. Contact me if you have any questions.
 
-Additionally, your `APP_ENV`, `APP_URL`, and `APP_KEY` will be set automatically in 
-production on OpenShift.
+## What is where? ##
+### Directory structure ###
+[Laravel structure](http://laravel.com/docs/5.0/structure)
+The folder app/ contains the models (for example, Item.php), the router (app/Http/routes.php) and controllers in (app/Http/Controllers).
+The folder database/migrations contains the migration files that will be run after you launch php artisan migrate.
+The folder public contains the views (public/pages) and js files, used by angular (public/js/app.js).
+The folder storage/fill contains the json files for the special fun builds and team comps Anverid prepared.
 
-The Laravel `CACHE_DRIVER` is set to use [APC opcode caching](http://php.net/manual/en/book.apc.php)
-and the `SESSION_DRIVER` is set to use the local file system for storage. Feel 
-free to update these settings in `.openshift/.env`.
+### Routing ###
+The root addresses are handled by Angular (/, /fun, /fun/rolebuilds ...) and are displayed to the user, therefore you should be able to see the most of it just by clicking stuff on the website.
+The api addresses, handled by Laravel, are there to see the data that was received from Riot Games API and use it. You can see the routes and controllers (app/Http/Controllers) used in the app/Http/routes.php file.
 
-### Laravel Migrations ###
-When the application is pushed to OpenShift, `php artisan migrate --force` is automatically executed.
+## Why is the project only half done? ##
+There are multiple factors which contributed to me not being able to finish it on time.
+- Underestimation of the size of the project and the time given
+- Lack of Laravel and Angular knowledge (only my second project using them)
+- Working as a part timer every day for 8 hours
+- LCS Playoffs (seriously, Riot, thanks for distracting me! ;) )
+- Party IP rewards (again, thanks for making me miss most of it ;) )
 
-### Composer ###
-When the application is pushed, `composer install` is automatically executed over the root directory. See [PHP Markers](https://developers.openshift.com/en/php-markers.html) for more details on the 'use_composer' marker.
+Even though I couldn't finish it in time, I plan on continuing the project after the winners are announced. I think it's a pretty good idea overall and I wonder if I would be able to get any visitors.
 
-### 'Development' Mode ###
-When you develop your Laravel application in OpenShift, you can also enable the
-'development' environment by setting the `APPLICATION_ENV` environment variable,
-using the `rhc` client, like:
+### Why was the last version comitted late to the GitHub repo? ###
+I am really sorry. I'm not used to the whole git & github thing, especially with mixing it with OpenShift, which uses git as well. 
+When I tried to commit it the first time, it didnt commit the whole directory. So after spending a lot of precious time with it, I found a good tutorial on OpenShift's help pages and I was finally able to do it. Yay!
 
-```
-$ rhc env set APPLICATION_ENV=development -a <app-name>
-```
+## Conclusion ##
+I think the overall idea of the project has the potential to be the best. However, I wasn't able to do all the things I wanted and would probably need a few days more in order to finish it.
+I don't doubt that there are many better looking projects out there. And I really wanted the Windows Surface because I was just planning on buying it. Oh well.
 
-Then, restart your application:
+Still, with each project you learn something new. And this one is no exception. I have gained experience in
+- E-R Models
+- Laravel
+- Riot Games API
+- Angular 
+which is always welcome.
 
-```
-$ rhc app restart -a <app-name>
-```
-
-If you do so, OpenShift will run your application under 'development' mode.
-In development mode, your application will:
-
-* Set Laravel's `APP_ENV` to 'development' and `APP_DEBUG` to 'true'
-* Ignore your composer.lock file
-* Show more detailed errors in browser
-* Display startup errors
-* Enable the [Xdebug PECL extension](http://xdebug.org/)
-* Enable [APC stat check](http://php.net/manual/en/apc.configuration.php#ini.apc.stat)
-
-Set the variable to 'production' and restart your app to deactivate error reporting 
-and resume production PHP settings.
-
-Using the development environment can help you debug problems in your application
-in the same way as you do when developing on your local machine. However, we strongly 
-advise you not to run your application in this mode in production.
-
-### Log Files ###
-Your application is configured to use the OpenShift log directory. You can use the 
-`rhc tail` command to stream the latest log file entries:
-
-```
-rhc tail -a <APP_NAME>
-```
-
-To stop tailing the logs, press *Ctrl + c*.
-
-## Manual Installation ##
-
-1. Create an account at https://www.openshift.com/
-
-1. Create a Laravel application:
-
-    ```
-    rhc app create laravelapp php-5.4 mysql-5.5 --from-code=https://github.com/luciddreamz/laravel
-    ```
-    or
-
-    ```
-    rhc app create laravelapp php-5.4 postgresql-9.2 --from-code=https://github.com/luciddreamz/laravel
-    ```
-
-## Additional Resources ##
-Documentation for the Laravel framework can be found on the [Laravel website](http://laravel.com/docs). Check 
-out OpenShift's [Developer Portal](https://developers.openshift.com/en/php-overview.html) for help running PHP on OpenShift.
+Many thanks to Anverid, the other team member, which was able to do his work on time - finding the funny team comps and builds, item sets for roles and other content related jobs in time.
