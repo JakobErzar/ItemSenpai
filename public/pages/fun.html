@@ -1,0 +1,42 @@
+<ul class="nav nav-pills nav-justified">
+  <li ng-class="activeRandom"><a href="/fun/randombuild">Random Builds</a></li>
+  <li ng-class="activeFun"><a href="/fun/funbuild">Fun Builds</a></li>
+  <li ng-class="activeTeam"><a href="/fun/teamcomp">Team Comps</a></li>
+</ul><br>
+<div ui-view></div>
+<br><br>
+<div class="text-center" class="row">
+    <h1> {{ name }} </h1>
+    <div ng-if="champions.length == 1" class="col-md-12">
+        <div ng-repeat="champion in champions track by $index">
+            <div class="background-champ champ-one" ng-style="{'background-image':'url('+champion.image+')'}">
+                <div class="content">
+                    <div class="items">
+                        <div class="item" ng-repeat="item in itemsets[$index].items">
+                            <img src="{{ item.icon }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="champions.length > 4">
+            <div class="col-md-1"></div>
+            <div ng-repeat="champion in champions track by $index | limitTo:5" class="col-md-2">
+                <div class="background-champ champ-five pull-left" ng-style="{'background-image':'url('+champion.loading+')'}">
+                    <div class="content">
+                        <div class="items">
+                            <div class="item" ng-repeat="item in itemsets[$index].items">
+                                <img src="{{ item.icon }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+    </div>
+</div>
+<div class="col-md-8" style="margin: 50px; margin-left: 100px;">
+    <p style="font-size:18px;">Description: {{ description }}</p>
+    <div ng-bind-html="video"></div>
+</p>

@@ -1,35 +1,40 @@
 
-    <div class="text-center">
-        <h1>ITEM SENPAI</h1>
-        <div class="lead">
-            Let the senpai show you the ways of the item sets.
-        </div>
-        <p class="senpaipls">SENPAI, TEACH ME HOW TO</p>
-    </div>
-    <div class="row text-center choice">
-        <div class="col-md-6 pull-left">
-            <div class="background-champ fun" ng-style="{'background-image':'url('+fun.background_url+')'}">
-                <div class="content">
-                    <h2>HAVE FUN!</h2>
-                    <p>fun builds and teamcomps!</p>
-                    <p>random builds!</p>
-                    <p>special game modes!</p>
-                    <div class="items">
-                        <div class="item" ng-repeat="item in fun.items">
-                            <img src="{{ item.icon }}" alt="">
-                        </div>
+<div class="text-center">
+    <p class="senpaipls">SENPAI, TEACH ME HOW TO</p>    
+</div>
+<div class="row text-center choice">
+    <a href="/fun/randombuild">
+    <div class="col-md-6 pull-left">
+        <div class="background-champ fun" ng-style="{'background-image':'url('+fun.background_url+')'}">
+            <div class="content">
+                <h2>HAVE FUN!</h2>
+                <p>fun builds and teamcomps!</p>
+                <p>random builds!</p>
+                <p>special game modes!</p>
+                <div class="items">
+                    <div class="item" ng-repeat="item in fun.items">
+                        <img src="{{ item.icon }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 pull-left">
-            <div class="background-champ work" ng-style="{'background-image':'url('+work.background_url+')'}">
-                <div class="content">
-                    <h2>TRYHARD!</h2>
-                    <p>best winrate builds!</p>
-                    <p>create sets by role!</p>
-                    <p>organize your sets!</p>
+    </div>
+    </a>
+    <a href="/work">
+    <div class="col-md-6 pull-left">
+        <div class="background-champ work" ng-style="{'background-image':'url('+work.background_url+')'}">
+            <div class="content">
+                <h2>TRYHARD!</h2>
+                <p>best winrate builds!</p>
+                <p>create sets by role!</p>
+                <p>organize your sets!</p>
+                <div class="items">
+                    <div class="item" ng-repeat="item in work.items">
+                        <img src="{{ item.icon }}" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </a>
+</div>

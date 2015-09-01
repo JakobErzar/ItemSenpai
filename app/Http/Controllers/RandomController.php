@@ -35,4 +35,22 @@ class RandomController extends Controller {
         return View::make('item.alldemo')->with('items', $items);
     }
 
+    public function getAll() {
+        ini_set('max_execution_time', 120);
+        $all = [];
+        $item_ids = Item::finalItem()->notGoodItemThingy()->lists('riot_id');
+        $champion_ids = Champion::lists('riot_id');
+        shuffle($champion_ids);
+        shuffle($item_ids);
+        $items = [];
+        foreach($champion_ids as $champion) {
+            for ($i=0; $i < 6; $i++) { 
+                $item = Item::where('riot_id', $item_ids[$i])->with('itemMaps')->first();
+                array_push($items, $item);
+            }
+            $all[] = ['items' => $items, 'champion' => Champion::where('riot_id', $champion)->first()];  
+        }
+        return $all;
+        
+    }
 }

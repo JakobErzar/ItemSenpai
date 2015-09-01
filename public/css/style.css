@@ -39,10 +39,10 @@ p {
 .choice {
     margin-top: 20px;
 }
-.col-md-6 {
+.choice .col-md-6 {
     opacity: 0.5;
 }
-.col-md-6:hover {
+.choice .col-md-6:hover {
     opacity: 1;
 }
 .background-champ {
@@ -64,6 +64,18 @@ p {
     opacity: 0.7;
     color: white;
     padding: 15px;
+}
+.champ-one {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+.champ-five {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
 }
 .fun {
 }
@@ -91,6 +103,12 @@ p.senpaipls {
     opacity: 1;
     margin-top: 20px;    
 }
+.champ-five .items {
+    margin-top: 200px;
+}
+.champ-one .items {
+    margin-top: 170px;
+}
 .item{
     display: inline-block;
     margin: 2px;
@@ -102,4 +120,32 @@ p.senpaipls {
     height: 50px;
     opacity: 1;
     border-radius: 5px;
+}
+.champ-one .item {
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    
+}
+.champ-one .item img {
+    width: 80px;
+    height: 80px;
+    
+}
+.nav-pills li a{
+    color: white;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    background-color: #111111;    
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: #1a1a1a;
+}
+.generate {
+    margin-left: auto;
+    margin-right: auto;
+    width:400px;
+}
+.generate button {
+    width: 100%;
 }

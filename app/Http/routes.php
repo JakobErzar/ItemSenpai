@@ -56,10 +56,27 @@ Route::group(['prefix' => 'api'], function() {
     Route::group(['prefix' => 'random'], function() {
         Route::get('build', 'RandomController@getBuild');
         Route::get('items', 'RandomController@getItems');
+        Route::get('all', 'RandomController@getAll');
     });
     
-    Route::group(['prefix' => 'memebuilds'], function() {
+    Route::group(['prefix' => 'memebuild'], function() {
         Route::get('demo', 'MemeBuildController@demo');
+        //Route::get('all', 'MemeBuildController@getAll');
+        Route::get('random', 'MemeBuildController@random');
+    });
+    
+    Route::group(['prefix' => 'teamcomps'], function() {
+        //Route::get('all', 'TeamCompsController@getAll');
+        Route::get('random', 'TeamCompsController@random');
+    });
+    
+    Route::group(['prefix' => 'winrate'], function() {
+        Route::get('all', 'WinrateBuildController@getAll');
+        Route::get('random', 'WinrateBuildController@random');
+    });
+    
+    Route::group(['prefix' => 'rolebuild'], function() {
+        Route::get('all', 'RoleBuildController@getAll');
     });
 });
 
