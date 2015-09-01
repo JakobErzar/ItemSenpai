@@ -1,8 +1,11 @@
 # ItemSenpai #
-[www.itemsenpai.xyz](http://www.itemsenpai.xyz)
+Website: [www.itemsenpai.xyz](http://www.itemsenpai.xyz)
+
 ItemSenpai is a website that provides you with everything you want from League of Legends item sets!
-Want to have some fun? Sure! Get some itemsets with random builds, various user-commited item builds or team comps! Build the items from the sets and have fun with your friends while playing seriously OP builds like AD Thresh!
-Want to improve your game? Well of course! One way to improve it would definitely be with downloading the best winrate & most frequent items and itemsets for specific roles! No more people telling you what to buy or looking it up on other sites!
+
+Want to have some __fun__? Sure! Get some itemsets with __random builds__, __various user-commited item builds__ or __team comps__! Build the items from the sets and have fun with your friends while playing seriously OP builds like AD Thresh!
+
+Want to __improve__ your game? Well of course! One way to improve it would definitely be with downloading the best __winrate & most frequent items__ and __itemsets for specific roles__! No more people telling you what to buy or looking it up on other sites!
 
 The website was built for the [Riot Games API Challenge 2.0](https://developer.riotgames.com/discussion/announcements/show/2lxEyIcE)
 
@@ -33,7 +36,9 @@ The folder storage/fill contains the json files for the special fun builds and t
 The root addresses are handled by Angular (/, /fun, /fun/rolebuilds ...) and are displayed to the user, therefore you should be able to see the most of it just by clicking stuff on the website.
 The api addresses, handled by Laravel, are there to see the data that was received from Riot Games API and use it. You can see the routes and controllers (app/Http/Controllers) used in the app/Http/routes.php file.
 
-## Why is the project only half done? ##
+## Why is the project not completely done? ##
+Oh, you've noticed it? There's a lot of data, that is processed in the backend but doesn't see the light yet (all of the improve part). The answer is simple: I ran out of time.
+
 There are multiple factors which contributed to me not being able to finish it on time.
 - Underestimation of the size of the project and the time given
 - Lack of Laravel and Angular knowledge (only my second project using them)
